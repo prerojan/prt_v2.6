@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/icon/favicon.ico.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/main.css">
+    <link rel="stylesheet" href="styles/components/video.css">
+    <link rel="stylesheet" href="styles/components/sobre.css">
+
+    <title>SAT editor</title>
+</head>
+<body>
+    <header class="header">
+        <span class="logo"><img src="image/sat.png" alt="SAT editor"></span>
+        <nav>
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#main" class="nav-a">Home</a></li>
+                <li class="nav-li"><a href="#videos" class="nav-a">Vídeos</a></li>
+                <li class="nav-li"><a href="#sobre" class="nav-a">Sobre</a></li>
+                <li class="nav-li"><a href="shorts.html" class="nav-a">Shorts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main" class="main">
+        <div class="main-left">
+        <h1 class="main-title">Olá, eu sou o <span class="sat">SAT</span></h1>
+        <h2 class="title-description">Editor de vídeos</h2>
+        </div>
+        <div class="main-right">
+            <img  class="main-img" src="image/edit.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="video" id="videos">
+        <div class="videos-left">
+            <div class="main-video">
+                <iframe id="main-video" src="https://www.youtube.com/embed/Bm7hrHIZHG0?autoplay=1"
+                    title="COISAS que NÃO FORAM FEITAS para SEREM VISTAS." frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="videos-right">
+                <div class="video-conteiner">
+                    <div class="recommended re1">
+                        <a href="#" data-video="https://www.youtube.com/embed/4PS_Pl3KpeA?autoplay=1">
+                            <div class="video-thumb">
+                                <img src="https://img.youtube.com/vi/4PS_Pl3KpeA/hqdefault.jpg" alt="EDIÇÃO P/ PORTFÓLIO #4">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recommended re2">
+                        <a href="#" data-video="https://www.youtube.com/embed/oTql5EpPG10?autoplay=1">
+                            <div class="video-thumb">
+                                <img src="https://img.youtube.com/vi/oTql5EpPG10/hqdefault.jpg" alt="EDIÇÃO P/ PORTFÓLIO #1">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recommended re3">
+                        <a href="#" data-video="https://youtube.com/embed/UGg0S0qZ94I?autoplay=1">
+                            <div class="video-thumb">
+                                <img src="https://img.youtube.com/vi/UGg0S0qZ94I/hqdefault.jpg" alt="os JOGOS ATUALMENTE estão RUINS?">
+                                <div class="play-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="image-container">
+                <img src="image/saticon.png" alt="Minha Foto">
+            </div>
+            <div class="text-container">
+                <h2>Sobre Mim</h2>
+                <p>Meu nome é Pedro, mas pode me chamar de SAT. Sou um criador de conteúdo do YouTube e editor de vídeos. Entrei recentemente no mercado mas meus trabalhos visuais contém um grande nível de qualidade e dedicação e com certeza ajudará a levar seu projeto a um nível acima!</p>
+                <p>Estou à disposição para discutir suas ideias e necessidades específicas, juntos podemos criar conteúdos impactantes que fortaleçam sua marca e engajem seu público.</p>
+
+                <div class="social-buttons">
+                    <a href="https://www.youtube.com/@satpng" target="_blank">
+                        <img src="image/youtube.png" alt="Meu canal do Youtube" class="img-btn">
+                    </a>
+                    <a href="https://x.com/sat_mp4" target="_blank">
+                        <img src="image/twitter.png" alt="Meu perfil no X" class="img-btn">
+                    </a>
+                    <a href="https://w.app/SATeditor" target="_blank">
+                        <img src="image/whatsapp.png" alt="Meu whatsapp" class="img-btn">
+                    </a>
+                    <a href="https://www.instagram.com/sateditor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <img src="image/instagram.png" alt="Meu perfil do Instagram" class="img-btn insta">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre"></section>
+
+</body>
+<script src="js/scripty.js"></script>
+</html>

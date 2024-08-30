@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    min-height: 100vh;
+    background-color: black;
+    background-image: url("../image/bg.png");
+    background-size: cover;
+    object-fit: cover;
+    font-family: "PT Sans", sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+.active {
+    color: rgb(255, 255, 255);
+    transition: 100ms;
+    -webkit-transition: 100ms;
+}

@@ -1,0 +1,103 @@
+#sobre {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-width: 100vh;
+    min-height: 92.5vh;
+    padding-inline: 4.25rem;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    min-height: 40em;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.container::after, .container::before {
+    content: '';
+    position: absolute;
+    height: 100.4%;
+    width: 100.2%;
+    background-image: conic-gradient(from var(--angle), rgb(94, 255, 94), rgb(255, 59, 190),rgb(255, 156, 43), rgb(40, 176, 255), rgb(94, 255, 94));
+    border-radius: 20px;
+    z-index: -1;
+    animation: --angle 3s linear infinite;
+}
+
+@keyframes --angle {
+    to {
+        --angle: 0deg;
+    }
+
+    from {
+        --angle: 360deg;
+    }
+}
+
+.container::before {
+    filter: blur(50px);
+    opacity: 0.5;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    padding-inline: 5em;
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+}
+
+.text-container h2 {
+    opacity: 0.8;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.text-container p {
+    opacity: 0.8;   
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.text-container p:last-child {
+    margin-bottom: 0;
+}
+
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+.img-btn {
+    width: 5em;
+    margin-inline: 60px;
+}
+
+a {
+    cursor: pointer;
+}

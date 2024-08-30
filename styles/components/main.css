@@ -1,0 +1,70 @@
+.main {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-width: 100vh;
+    min-height: 92.5vh;
+    padding-inline: 4.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-left {
+    flex: 1;
+    padding-inline: 1.25rem;
+}
+
+.main-right {
+    flex: 0.8;
+}
+
+.sat {
+    opacity: 1;
+    font-weight: 800;
+    color: #ffe922;
+    animation: glow 3500ms linear infinite;
+}
+
+@keyframes glow {
+    20% {
+        text-shadow: 0 0 5px #ffaa00;
+    }
+
+    40% {
+    text-shadow: 0 0 15px #d47f08;
+    }
+
+    60% {
+        text-shadow: 0 0 25px #e6a005;
+    }
+
+
+}
+
+.main-title {
+    z-index: 1;
+    font-weight: 400;
+    font-size: 5.5em;
+    margin-left: 7rem;
+    font-family: "Platypi", serif;
+}
+
+.title-description {
+    color: rgba(0, 195, 255, 0.705);
+    line-height: 2ch;
+    font-weight: 200;
+    font-size: 2.5em;
+    margin-left: 7.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-img {
+    z-index: 0;
+    top: 0px;
+    right: 0;
+    width: 1400px;
+    height: 100vh;
+    position: absolute;
+    mask-image: linear-gradient(to right, transparent, rgb(0, 0, 0));
+    -webkit-mask-image: linear-gradient(to right, transparent, rgb(0, 0, 0));
+}
